@@ -89,7 +89,6 @@ neverallow { domain
 - hal_sensors_default
 - hal_camera_default
 - hal_audio_default
-- vendor_qvrd_vndr_cam
 - opluscamera_app
 userdebug_or_eng(` -vendor_usta_app')
 userdebug_or_eng(` -vendor_ustaservice_app')
@@ -112,7 +111,6 @@ neverallow { domain
 - vendor_qvrd_vndr
 - vendor_thermal-engine
 - vendor_dspservice
-- vendor_qvrd_vndr_cam
 userdebug_or_eng(` -vendor_nativehaltestservice')
 userdebug_or_eng(` -vendor_sysmonapp_app_test')
 } vendor_qdsp_device:chr_file *;
@@ -125,6 +123,7 @@ neverallow { domain
 - ueventd
 - vold
 - vendor_hal_qspa_default
+- vendor_hal_perf_default
 - tee
 - hal_bluetooth
 - hal_bluetooth_server
@@ -137,7 +136,6 @@ neverallow { domain
 - hal_camera_default
 - apexd
 - vendor_qti_init_shell
-- vendor_qvrd_vndr_cam
 - vendor_qti_graphics_boot
 - wpa_supplicant_macsec
 userdebug_or_eng(` -vendor_subsystem_ramdump')

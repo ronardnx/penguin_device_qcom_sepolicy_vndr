@@ -29,6 +29,7 @@ hal_client_domain(mediaserver, hal_audio)
 
 #to read audio props
 get_prop(mediaserver, vendor_audio_prop)
+get_prop(mediaserver, vendor_display_prop)
 
 dontaudit mediaserver vendor_hal_qspmhal_hwservice:hwservice_manager find;
 dontaudit mediaserver vendor_hal_qspmhal_service:service_manager find;
